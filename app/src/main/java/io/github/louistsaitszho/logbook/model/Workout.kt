@@ -11,5 +11,6 @@ data class Workout(
     val id: UUID,
     val startTime: OffsetDateTime,  //TODO maybe ZDT would be better? IDK
     val splits: List<Split>?,
-    val total: Split
+    val overall: Split,
+    val tags: Set<String>
 )
