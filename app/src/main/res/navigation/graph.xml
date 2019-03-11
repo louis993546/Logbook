@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/graph"
-            app:startDestination="@id/splashFragment">
+<navigation
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/graph"
+        app:startDestination="@id/splashFragment">
 
     <fragment
             android:id="@+id/splashFragment"
@@ -10,10 +11,10 @@
             android:label="SplashFragment">
         <action
                 android:id="@+id/action_splashFragment_to_homeFragment"
-                app:destination="@id/homeFragment"/>
+                app:destination="@id/logbookFragment"/>
     </fragment>
     <fragment
-            android:id="@+id/homeFragment"
+            android:id="@+id/logbookFragment"
             android:name="io.github.louistsaitszho.logbook.logbook.LogbookFragment"
             android:label="HomeFragment"/>
 </navigation>
