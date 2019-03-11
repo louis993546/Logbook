@@ -14,10 +14,12 @@ fun getTree(): Timber.Tree = if (BuildConfig.DEBUG) Timber.DebugTree() else TODO
 val koinTimberLogger = object : Logger() {
     val TAG = "Koin"
     override fun log(level: Level, msg: MESSAGE) {
-        when (level) {
-            Level.DEBUG -> Timber.tag(TAG).d(msg)
-            Level.INFO -> Timber.tag(TAG).i(msg)
-            Level.ERROR -> Timber.tag(TAG).e(msg)
+        Timber.tag(TAG).apply {
+            when (level) {
+                Level.DEBUG -> this.d(msg)
+                Level.INFO -> this.i(msg)
+                Level.ERROR -> this.e(msg)
+            }
         }
     }
 }
