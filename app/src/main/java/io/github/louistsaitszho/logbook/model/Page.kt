@@ -10,7 +10,7 @@ sealed class Page
  * - order
  * - what to display
  */
-data class HistoryDashboard(
+data class TimelinePage(
     val id: UUID,
     val name: String
     //TODO filter
@@ -21,7 +21,7 @@ data class HistoryDashboard(
 /**
  * Shows the best [Workout] according to some criteria
  */
-data class BestDashboard(
+data class BestOfPage(
     val id: UUID,
     val name: String
     //TODO val criteria: ?
