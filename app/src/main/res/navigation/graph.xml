@@ -2,13 +2,15 @@
 <navigation
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/graph"
         app:startDestination="@id/splashFragment">
 
     <fragment
             android:id="@+id/splashFragment"
             android:name="io.github.louistsaitszho.logbook.splash.SplashFragment"
-            android:label="SplashFragment">
+            android:label="SplashFragment"
+            tools:layout="@layout/fragment_splash">
         <action
                 android:id="@+id/action_splashFragment_to_homeFragment"
                 app:destination="@id/logbookFragment"/>
@@ -16,5 +18,15 @@
     <fragment
             android:id="@+id/logbookFragment"
             android:name="io.github.louistsaitszho.logbook.logbook.LogbookFragment"
-            android:label="HomeFragment"/>
+            android:label="LogbookFragment"
+            tools:layout="@layout/fragment_logbook">
+        <action
+                android:id="@+id/action_logbookFragment_to_workoutFragment"
+                app:destination="@id/workoutFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/workoutFragment"
+            android:name="io.github.louistsaitszho.logbook.workout.WorkoutFragment"
+            android:label="WorkoutFragment"
+            tools:layout="@layout/fragment_workout"/>
 </navigation>
