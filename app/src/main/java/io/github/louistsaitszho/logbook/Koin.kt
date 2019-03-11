@@ -1,11 +1,11 @@
 package io.github.louistsaitszho.logbook
 
-import io.github.louistsaitszho.logbook.dashboard.DashboardViewModel
-import io.github.louistsaitszho.logbook.home.HomeViewModel
+import io.github.louistsaitszho.logbook.logbook.LogbookViewModel
+import io.github.louistsaitszho.logbook.page.PageViewModel
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val appModule = module {
-    viewModel { DashboardViewModel() }
-    viewModel { HomeViewModel() }
+    viewModel { PageViewModel() }
+    viewModel { LogbookViewModel() }
 }

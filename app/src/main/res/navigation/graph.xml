@@ -14,6 +14,6 @@
     </fragment>
     <fragment
             android:id="@+id/homeFragment"
-            android:name="io.github.louistsaitszho.logbook.home.HomeFragment"
+            android:name="io.github.louistsaitszho.logbook.logbook.LogbookFragment"
             android:label="HomeFragment"/>
 </navigation>
