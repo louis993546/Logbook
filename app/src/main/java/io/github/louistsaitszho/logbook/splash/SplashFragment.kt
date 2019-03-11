@@ -9,7 +9,7 @@ import io.github.louistsaitszho.logbook.R
 
 class SplashFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
-        inflater.inflate(R.layout.splash_fragment, container, true)
+        inflater.inflate(R.layout.fragment_splash, container, false)
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
