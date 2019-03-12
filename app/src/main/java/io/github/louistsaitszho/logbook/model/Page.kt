@@ -7,7 +7,7 @@ import java.util.*
 sealed class Page
 
 /**
- * Show a list/chart of [Workout] over time according to
+ * Show a list/chart of [SingleWorkout] over time according to
  * - filters
  * - what to display
  */
@@ -23,7 +23,7 @@ enum class DisplayableColumn {
 }
 
 /**
- * Shows the best [Workout] according to some criteria
+ * Shows the best [SingleWorkout] according to some criteria
  */
 data class BestOfPage(
     val id: UUID,
