@@ -10,5 +10,6 @@ data class Split(
     val distance: Float,
     val duration: Duration,
     val strokeRate: Int,
-    val heartRate: Int?
+    val heartRate: Int?,
+    val damper: Double
 )

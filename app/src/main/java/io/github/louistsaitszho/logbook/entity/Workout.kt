@@ -5,13 +5,16 @@ import org.threeten.bp.LocalDateTime
 import org.threeten.bp.ZoneOffset
 import java.util.*
 
-/**
- * TODO at this moment, this only deals with [io.github.louistsaitszho.logbook.model.SingleWorkout]
- */
 @Entity
 data class Workout(
     val id: UUID,
     val startTime: LocalDateTime,
-    val offset: ZoneOffset
-//TODO should the overall split info lives here?
+    val offset: ZoneOffset,
+    val type: WorkoutType
 )
+
+//TODO need to store rest distance for interval workout
+
+enum class WorkoutType {
+    REGULAR, INTERVAL
+}
