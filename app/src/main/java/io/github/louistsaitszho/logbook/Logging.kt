@@ -1,14 +1,28 @@
 package io.github.louistsaitszho.logbook
 
+import android.util.Log
 import org.koin.core.logger.Level
 import org.koin.core.logger.Logger
 import org.koin.core.logger.MESSAGE
 import timber.log.Timber
 
 //The 1 true king: Timber
-fun getTree(): Timber.Tree = if (BuildConfig.DEBUG) Timber.DebugTree() else TODO("need another type of tree")
+fun getTree(): Timber.Tree = if (BuildConfig.DEBUG) Timber.DebugTree() else releaseTree
 
-//TODO crashlytics log
+val releaseTree = object : Timber.Tree() {
+    override fun log(priority: Int, tag: String?, message: String, t: Throwable?) {
+        //TODO move this to crashlytics
+        when (priority) {
+            Log.VERBOSE -> Log.v(tag, message, t)
+            Log.DEBUG -> Log.d(tag, message, t)
+            Log.INFO -> Log.i(tag, message, t)
+            Log.WARN -> Log.w(tag, message, t)
+            Log.ERROR -> Log.e(tag, message, t)
+            else -> Log.wtf(tag, "lv $priority: $message", t)
+        }
+    }
+
+}
 
 //All the other libraries's interface on logging -> map to timber
 val koinTimberLogger = object : Logger() {
