@@ -7,7 +7,7 @@
 
         <variable
                 name="viewModel"
-                type="io.github.louistsaitszho.logbook.workout.WorkoutViewModel"/>
+                type="io.github.louistsaitszho.logbook.workoutDetail.WorkoutDetailViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

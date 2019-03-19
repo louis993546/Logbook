@@ -26,7 +26,7 @@
     </fragment>
     <fragment
             android:id="@+id/workoutFragment"
-            android:name="io.github.louistsaitszho.logbook.workout.WorkoutFragment"
+            android:name="io.github.louistsaitszho.logbook.workoutDetail.WorkoutDetailFragment"
             android:label="WorkoutFragment"
-            tools:layout="@layout/fragment_workout"/>
+            tools:layout="@layout/fragment_workout_detail"/>
 </navigation>
