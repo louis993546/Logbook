@@ -4,17 +4,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/graph"
-        app:startDestination="@id/splashFragment">
+        app:startDestination="@id/logbookFragment">
 
-    <fragment
-            android:id="@+id/splashFragment"
-            android:name="io.github.louistsaitszho.logbook.feature.splash.SplashFragment"
-            android:label="SplashFragment"
-            tools:layout="@layout/fragment_splash">
-        <action
-                android:id="@+id/action_splashFragment_to_homeFragment"
-                app:destination="@id/logbookFragment"/>
-    </fragment>
     <fragment
             android:id="@+id/logbookFragment"
             android:name="io.github.louistsaitszho.logbook.feature.logbook.LogbookFragment"

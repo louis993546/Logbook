@@ -11,3 +11,7 @@ bring your spirit down and give up
 
 - Store workout history in local storage
 - Multiple pages so that it's easier to see how you progress
+
+## TODO
+
+- [ ] deal with all the saved states 
