@@ -1,4 +1,4 @@
-package io.github.louistsaitszho.logbook.splash
+package io.github.louistsaitszho.logbook.feature.splash
 
 import android.os.Bundle
 import android.view.LayoutInflater

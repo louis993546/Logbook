@@ -1,4 +1,4 @@
-package io.github.louistsaitszho.logbook.logbook
+package io.github.louistsaitszho.logbook.feature.logbook
 
 import androidx.lifecycle.ViewModel
 

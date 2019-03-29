@@ -1,4 +1,4 @@
-package io.github.louistsaitszho.logbook.splash
+package io.github.louistsaitszho.logbook.feature.splash
 
 import androidx.lifecycle.ViewModel
 

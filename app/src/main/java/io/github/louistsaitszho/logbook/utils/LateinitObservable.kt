@@ -1,4 +1,4 @@
-package io.github.louistsaitszho.logbook
+package io.github.louistsaitszho.logbook.utils
 
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty

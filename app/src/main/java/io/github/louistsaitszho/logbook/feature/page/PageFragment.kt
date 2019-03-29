@@ -1,4 +1,4 @@
-package io.github.louistsaitszho.logbook.page
+package io.github.louistsaitszho.logbook.feature.page
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -8,7 +8,7 @@
 
     <fragment
             android:id="@+id/splashFragment"
-            android:name="io.github.louistsaitszho.logbook.splash.SplashFragment"
+            android:name="io.github.louistsaitszho.logbook.feature.splash.SplashFragment"
             android:label="SplashFragment"
             tools:layout="@layout/fragment_splash">
         <action
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
             android:id="@+id/logbookFragment"
-            android:name="io.github.louistsaitszho.logbook.logbook.LogbookFragment"
+            android:name="io.github.louistsaitszho.logbook.feature.logbook.LogbookFragment"
             android:label="LogbookFragment"
             tools:layout="@layout/fragment_logbook">
         <action
@@ -26,7 +26,7 @@
     </fragment>
     <fragment
             android:id="@+id/workoutFragment"
-            android:name="io.github.louistsaitszho.logbook.workoutDetail.WorkoutDetailFragment"
+            android:name="io.github.louistsaitszho.logbook.feature.workoutDetail.WorkoutDetailFragment"
             android:label="WorkoutFragment"
             tools:layout="@layout/fragment_workout_detail"/>
 </navigation>

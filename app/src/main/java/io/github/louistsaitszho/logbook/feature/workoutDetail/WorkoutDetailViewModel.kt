@@ -1,11 +1,11 @@
-package io.github.louistsaitszho.logbook.workoutDetail
+package io.github.louistsaitszho.logbook.feature.workoutDetail
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import io.github.louistsaitszho.logbook.LateinitObservable
 import io.github.louistsaitszho.logbook.model.IntervalWorkout
 import io.github.louistsaitszho.logbook.model.NormalWorkout
 import io.github.louistsaitszho.logbook.model.Workout
+import io.github.louistsaitszho.logbook.utils.LateinitObservable
 import java.util.*
 
 class WorkoutDetailViewModel(workoutId: UUID) : ViewModel() {

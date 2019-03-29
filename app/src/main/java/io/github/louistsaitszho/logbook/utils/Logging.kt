@@ -1,6 +1,7 @@
-package io.github.louistsaitszho.logbook
+package io.github.louistsaitszho.logbook.utils
 
 import android.util.Log
+import io.github.louistsaitszho.logbook.BuildConfig
 import org.koin.core.logger.Level
 import org.koin.core.logger.Logger
 import org.koin.core.logger.MESSAGE

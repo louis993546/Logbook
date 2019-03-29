@@ -1,4 +1,4 @@
-package io.github.louistsaitszho.logbook.workoutDetail
+package io.github.louistsaitszho.logbook.feature.workoutDetail
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import io.github.louistsaitszho.logbook.databinding.FragmentWorkoutDetailBinding
-import io.github.louistsaitszho.logbook.model.WorkoutData
 import org.koin.android.viewmodel.ext.viewModel
 import org.koin.core.parameter.parametersOf
 import java.util.*
