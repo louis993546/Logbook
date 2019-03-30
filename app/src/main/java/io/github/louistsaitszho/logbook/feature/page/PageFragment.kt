@@ -16,10 +16,6 @@ class PageFragment : Fragment() {
         return binding.root
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-    }
-
     companion object {
         fun <T : Page> newInstance(page: T) = PageFragment()
     }

@@ -16,3 +16,7 @@ bring your spirit down and give up
 
 - [ ] deal with all the saved states
 - [ ] Split it into multiple modules
+- [ ] detekt
+- [ ] pmd
+- [ ] ktlint
+- [ ] jacoco

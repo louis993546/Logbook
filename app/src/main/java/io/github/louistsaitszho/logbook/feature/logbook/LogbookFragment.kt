@@ -8,12 +8,10 @@ import androidx.fragment.app.Fragment
 import io.github.louistsaitszho.logbook.databinding.FragmentLogbookBinding
 
 class LogbookFragment : Fragment() {
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding = FragmentLogbookBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-    }
 }
