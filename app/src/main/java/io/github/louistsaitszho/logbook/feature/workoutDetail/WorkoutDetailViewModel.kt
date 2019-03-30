@@ -26,11 +26,11 @@ class WorkoutDetailViewModel(workoutId: UUID) : ViewModel() {
         }
     })
 
-    private val textViewDistance = MutableLiveData<String>()
-    private val textViewDuration = MutableLiveData<String>()
-    private val textViewStrokeRate = MutableLiveData<String>()
-    private val textViewHeartRate = MutableLiveData<String>()
-    private val progressBarLoading = MutableLiveData<Boolean>()
+    val textViewDistance = MutableLiveData<String>()
+    val textViewDuration = MutableLiveData<String>()
+    val textViewStrokeRate = MutableLiveData<String>()
+    val textViewHeartRate = MutableLiveData<String>()
+    val progressBarLoading = MutableLiveData<Boolean>()
     //TODO matching number of public LiveData to expose the getter
 
     init {
