@@ -5,15 +5,11 @@
 
     <data>
 
-        <variable
-                name="viewModel"
-                type="io.github.louistsaitszho.logbook.workoutDetail.WorkoutDetailViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
         <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -34,23 +30,19 @@
 
             <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@{viewModel.textViewDistance}"/>
+                    android:layout_height="wrap_content"/>
 
             <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@{viewModel.textViewDuration}"/>
+                    android:layout_height="wrap_content"/>
 
             <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@{viewModel.textViewStrokeRate}"/>
+                    android:layout_height="wrap_content"/>
 
             <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@{viewModel.textViewHeartRate}"/>
+                    android:layout_height="wrap_content"/>
 
         </LinearLayout>
 

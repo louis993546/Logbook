@@ -14,4 +14,5 @@ bring your spirit down and give up
 
 ## TODO
 
-- [ ] deal with all the saved states 
+- [ ] deal with all the saved states
+- [ ] Split it into multiple modules
